@@ -1,0 +1,111 @@
+/* Plans Container */
+.plans-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #edf6ff, #ffffff, #e9f4ff);
+}
+
+/* Title */
+.plans-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Toggle Button Container */
+.toggle-container {
+  display: flex;
+  background: #e0e0e0;
+  padding: 0.5rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: none;
+  transition: all 0.3s ease-in-out;
+
+}
+
+.toggle-button.active {
+  color: white;
+  border-radius: 50px;
+}
+
+/* Pricing Cards */
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+/* Plan Card */
+.plan-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  width: 280px;
+}
+
+.plan-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.plan-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.plan-duration {
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: #777;
+}
+
+.plan-min-total {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.3rem;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.feature-item {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+/* Select Plan Button */
+.select-plan-button {
+  background: #1e3a8a;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.select-plan-button:hover {
+  background: #14244e;
+}
