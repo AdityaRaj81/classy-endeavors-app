@@ -1,48 +1,51 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import styles from "./footer.module.css";
+import { FaWhatsapp, FaFacebookF, FaLinkedinIn, FaDiscord, FaEnvelope, FaTv } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900">
-      <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Classy Endeavors</h3>
-            <p className="text-gray-400">
-              Creating exceptional experiences through innovative solutions.
-            </p>
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
+        {/* Left Side - Company Name */}
+        <p className={styles.poweredBy}>Powered by Classy Endeavors</p>
+
+        {/* Right Side - Social Icons & Links */}
+        <div className={styles.rightSection}>
+          {/* Social Media Links (Top) */}
+          <div className={styles.socialIcons}>
+            <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noopener noreferrer">
+              <FaWhatsapp />
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebookF />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn />
+            </a>
+            <a href="https://discord.com" target="_blank" rel="noopener noreferrer">
+              <FaDiscord />
+            </a>
+            <a href="mailto:info@classyendeavors.com">
+              <FaEnvelope />
+            </a>
+            <a href="#">
+              <FaTv />
+            </a>
           </div>
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-gray-400 hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-gray-400 hover:text-white transition-colors">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-400 hover:text-white transition-colors">
-                  Contact
-                </Link>
-              </li>
-            </ul>
+
+          {/* Horizontal Line */}
+          <hr className={styles.divider} />
+
+          {/* Other Links (Bottom) */}
+          <div className={styles.links}>
+            <Link to="/features">Features</Link>
+            <Link to="/why-choose-us">Why Choose Us</Link>
+            <Link to="/pricing">Pricing</Link>
+            <Link to="/faq">FAQ</Link>
+            <Link to="/legal-terms">Legal terms</Link>
+            <Link to="/privacy-policy">Privacy policy</Link>
           </div>
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Contact Us</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>Email: info@classyendeavors.com</li>
-              <li>Phone: (555) 123-4567</li>
-              <li>Address: 123 Business Ave, Suite 100</li>
-            </ul>
-          </div>
-        </div>
-        <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Classy Endeavors. All rights reserved.</p>
         </div>
       </div>
     </footer>
