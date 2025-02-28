@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
+  "homepage": "https://adityaraj81.github.io/classy-endeavors-app/",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
