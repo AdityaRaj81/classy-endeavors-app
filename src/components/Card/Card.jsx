@@ -1,13 +1,13 @@
-import React from 'react';
 import styles from './Card.module.css';
+import PropTypes from 'prop-types';
 
-const Card = ({ 
-  title, 
-  children, 
+const Card = ({
+  title,
+  children,
   className = '',
   variant = 'elevated',
   loading = false,
-  ...props 
+  ...props
 }) => {
   return (
     <div 
@@ -30,6 +30,13 @@ const Card = ({
       </div>
     </div>
   );
+};
+Card.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.node,
+  className: PropTypes.string,
+  variant: PropTypes.oneOf(['elevated', 'outlined', 'flat']),
+  loading: PropTypes.bool,
 };
 
 export default Card;
