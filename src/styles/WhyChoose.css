@@ -1,0 +1,137 @@
+/* General Styling */
+.why-choose {
+  width: 100%;
+  text-align: center;
+  padding: 50px;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(to right, #edf6ff, #ffffff, #e9f4ff);
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Container Styling */
+.why-choose-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Sidebar List */
+.why-choose-list {
+  list-style: none;
+  padding: 20px;
+  width: 35%;
+  min-width: 250px;
+}
+
+.why-choose-item {
+  text-align: left;
+  font-size: 22px;
+  color: rgb(110, 110, 110);
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.why-choose-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 4px 4px 10px rgba(209, 48, 48, 0.2);
+}
+
+.why-choose-item.active {
+  border: 1px solid rgb(142, 45, 226);
+  box-shadow: 0 0 10px rgba(142, 45, 226, 0.5);
+  color: rgb(142, 45, 226);
+}
+
+/* Content Box */
+.why-choose-content {
+  width: 60%;
+  min-width: 300px;
+  min-height: 400px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .why-choose-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-choose-list,
+  .why-choose-content {
+    width: 90%;
+  }
+
+  .why-choose-content {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-choose {
+    padding: 40px 20px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .why-choose-list {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .why-choose-item {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .why-choose-content {
+    font-size: 18px;
+    padding: 15px;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .why-choose-item {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .why-choose-content {
+    font-size: 16px;
+    padding: 12px;
+    min-height: 200px;
+  }
+}
