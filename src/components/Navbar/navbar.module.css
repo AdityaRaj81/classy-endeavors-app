@@ -1,0 +1,150 @@
+/* Navbar container */
+.navbar {
+  background-color: white;
+  width: 100%;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* Main container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Left - Logo */
+.logoContainer {
+  flex: 1;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+/* Center - Desktop Navigation */
+.desktopMenu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.link {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #111827;
+}
+
+.activeLink {
+  color: #2563eb;
+}
+
+/* Right - Discord & Get Started */
+.rightMenu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+/* Discord Button */
+.discordButton {
+  display: flex;
+  align-items: center;
+}
+
+.discordIcon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Mobile Menu Button (Hamburger) */
+.mobileMenuButton {
+  display: none; /* Default: Hidden on desktop */
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburgerIcon {
+  width: 32px;
+  height: 32px;
+  color: #2563eb;
+}
+
+/* Mobile Menu */
+.mobileMenu {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 250px;
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Mobile Links */
+.mobileLink {
+  color: #4b5563;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.mobileLink:hover {
+  color: #111827;
+}
+
+.activeMobileLink {
+  color: #2563eb;
+}
+
+/* Mobile Discord Button */
+.mobileDiscordButton {
+  display: flex;
+  align-items: center;
+}
+
+.mobileDiscordIcon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Show Hamburger Button on Mobile */
+@media (max-width: 768px) {
+  .desktopMenu, .rightMenu {
+    display: none; /* Hide desktop menu */
+  }
+  
+  .mobileMenuButton {
+    display: flex; /* Show hamburger */
+  }
+}
