@@ -3,8 +3,10 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/classy-endeavors-app/", // Set base path for GitHub Pages
+  server: {
+    port: 3000,
+  },
   build: {
-    outDir: "dist", // Ensure Vite builds to dist/
+    outDir: "dist",
   },
 });
