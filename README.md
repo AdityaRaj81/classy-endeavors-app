@@ -89,7 +89,12 @@ Classy Endeavors App serves as a refined approach to front-end development, comb
 ---
 
 ## 🌎 Live Demo  
-[Click here to explore Classy Endeavors](#) *(Add deployment link when available)*  
+Click Below to explore Classy Endeavors. ⬇️
+<br>
+[vercel](https://classy-endeavors-app.vercel.app/)
+<br>
+[netlify](https://classy-endeavors-app.netlify.app/)
+
 
 ---
 
