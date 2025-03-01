@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "../styles/hero.css";
+import "../styles/Hero.css";
 
 const words = ["Convert", "Create", "Sign"];
 
@@ -24,7 +24,7 @@ const Hero = () => {
         <h1 className="hero-title">
           AI-Powered Unified Platform; <span className="highlight">{currentWord}</span> Effortlessly
         </h1>
-        <p className="hero-subtitle">Fast, Smart & Secure – Works with Google Drive, Dropbox, Salesforce & Your Favorite Business Tools</p>
+        <p className="hero-">Fast, Smart & Secure – Works with Google Drive, Dropbox, Salesforce & Your Favorite Business Tools</p>
         <div className="compliance">
           <span>✔️ ESIGN Compliant</span>
           <span>✔️ UETA Approved</span>
