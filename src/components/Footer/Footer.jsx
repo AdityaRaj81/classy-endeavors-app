@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./footer.module.css";
 import { FaWhatsapp, FaFacebookF, FaLinkedinIn, FaDiscord, FaEnvelope, FaTv } from "react-icons/fa";
@@ -9,6 +8,7 @@ const Footer = () => {
       <div className={styles.footerContainer}>
         {/* Left Side - Company Name */}
         <p className={styles.poweredBy}>Powered by Classy Endeavors</p>
+        <br />
 
         {/* Right Side - Social Icons & Links */}
         <div className={styles.rightSection}>
@@ -33,6 +33,7 @@ const Footer = () => {
               <FaTv />
             </a>
           </div>
+        
 
           {/* Horizontal Line */}
           <hr className={styles.divider} />
