@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./pages/Hero";
@@ -11,7 +11,7 @@ import "./styles/global.css";
 
 function App() {
   return (
-    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+    <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
@@ -21,7 +21,7 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <UsersSay /> 
+                  <UsersSay />
                   <WhyChoose />
                   <Plans />
                   <FAQ />
