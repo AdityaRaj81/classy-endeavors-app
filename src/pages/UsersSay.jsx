@@ -3,12 +3,12 @@ import "../styles/UsersSay.css";
 import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const logos = [
-  "src/assets/logo_1.png",
-  "src/assets/logo_2.png",
-  "src/assets/logo_4.png",
-  "src/assets/logo_5.png",
-  "src/assets/logo_3.png",
-  "src/assets/logo_6.png",
+  "assets/Logo_1.png",
+  "assets/Logo_2.png",
+  "assets/Logo_3.png",
+  "assets/Logo_4.png",
+  "assets/Logo_5.png",
+  "assets/Logo_6.png",
 ];
 
 const reviews = [
