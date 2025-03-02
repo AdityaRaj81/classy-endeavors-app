@@ -12,12 +12,12 @@ const logos = [
 ];
 
 const reviews = [
-  { text: "The seamless experience and fast service make it a game-changer!", image: "src/assets/User.png" },
-  { text: "Absolutely love how easy and efficient the platform is to use!", image: "src/assets/User.png" },
-  { text: "A must-have tool! The support team is fantastic as well.", image: "src/assets/User.png" },
-  { text: "Highly recommend! The workflow automation is next level.", image: "src/assets/User.png" },
-  { text: "I’ve saved so much time since switching to this service. Incredible!", image: "src/assets/User.png" },
-  { text: "Best decision I’ve made! The features are tailored to my needs.", image: "src/assets/User.png" },
+  { text: "The seamless experience and fast service make it a game-changer!", image: "assets/User.png" },
+  { text: "Absolutely love how easy and efficient the platform is to use!", image: "assets/User.png" },
+  { text: "A must-have tool! The support team is fantastic as well.", image: "assets/User.png" },
+  { text: "Highly recommend! The workflow automation is next level.", image: "assets/User.png" },
+  { text: "I’ve saved so much time since switching to this service. Incredible!", image: "assets/User.png" },
+  { text: "Best decision I’ve made! The features are tailored to my needs.", image: "assets/User.png" },
 ];
 
 const UsersSay = () => {
