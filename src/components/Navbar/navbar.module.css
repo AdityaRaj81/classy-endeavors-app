@@ -1,15 +1,16 @@
 /* Navbar container */
 .navbar {
-  background-color: white;
+  background: linear-gradient(to right, #edf6ff, #ffffff, #e9f4ff);
   width: 100%;
   padding: 16px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
+  transition: top 0.3s ease-in-out;
   z-index: 100;
 }
 

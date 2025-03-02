@@ -1,12 +1,23 @@
-import { useState } from 'react';
-import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import Button from '../Button'; 
 import styles from './navbar.module.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
+
   const navigate = useNavigate();
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleNavClick = (sectionId) => {
     if (location.pathname !== "/") {
@@ -21,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} style={{ top: `${-scrollY}px` }}>
       <div className={styles.container}>
         <div className={styles.logoContainer}>
           <Link to="/" className={styles.logo}>
@@ -53,7 +64,7 @@ const Navbar = () => {
           >
             <img src="assets/discord.ico" alt="Discord" className={styles.discordIcon} />
           </a>
-          <Button variant="primary" size="sm">
+          <Button variant="primary" size="sm" onClick={() => navigate("/get-started")}>
             Get Started
           </Button>
         </div>
@@ -89,7 +100,7 @@ const Navbar = () => {
           <a href="https://discord.com" target="_blank" rel="noopener noreferrer" className={styles.mobileDiscordButton}>
             <img src="assets/discord.ico" alt="Discord" className={styles.mobileDiscordIcon} />
           </a>
-          <Button variant="primary" size="sm">
+          <Button variant="primary" size="sm" onClick={() => navigate("/get-started")}>
             Get Started
           </Button>
         </div>
