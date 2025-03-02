@@ -1,4 +1,5 @@
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Hero from "./pages/Hero";
@@ -9,9 +10,26 @@ import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 import "./styles/global.css";
 
+// Scroll to section when navigation occurs
+const ScrollToSection = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  }, [hash]);
+
+  return null;
+};
+
 function App() {
   return (
     <Router>
+      <ScrollToSection />
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
@@ -21,10 +39,18 @@ function App() {
               element={
                 <>
                   <Hero />
-                  <UsersSay />
-                  <WhyChoose />
-                  <Plans />
-                  <FAQ />
+                  <div id="features">
+                    <UsersSay />
+                  </div>
+                  <div id="why-choose-us">
+                    <WhyChoose />
+                  </div>
+                  <div id="pricing">
+                    <Plans />
+                  </div>
+                  <div id="faq">
+                    <FAQ />
+                  </div>
                 </>
               }
             />
