@@ -47,7 +47,7 @@ const Navbar = () => {
             className={styles.discordButton}
           >
             <img
-              src="src\assets\discord.ico"
+              src="assets\discord.ico"
               alt="Discord"
               className={styles.discordIcon}
             />
@@ -113,7 +113,7 @@ const Navbar = () => {
             className={styles.mobileDiscordButton}
           >
             <img
-              src="src\assets\discord.ico"
+              src="assets\discord.ico"
               alt="Discord"
               className={styles.mobileDiscordIcon}
             />
