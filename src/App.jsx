@@ -7,6 +7,7 @@ import UsersSay from "./pages/UsersSay";
 import WhyChoose from "./pages/WhyChoose";
 import Plans from "./pages/Plans";
 import FAQ from "./pages/FAQ";
+import GetStarted from "./pages/GetStarted";
 import NotFound from "./pages/NotFound";
 import "./styles/global.css";
 
@@ -54,6 +55,7 @@ function App() {
                 </>
               }
             />
+            <Route path="/get-started" element={<GetStarted />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
