@@ -11,7 +11,6 @@ import GetStarted from "./pages/GetStarted";
 import NotFound from "./pages/NotFound";
 import "./styles/global.css";
 
-// Scroll to section when navigation occurs
 const ScrollToSection = () => {
   const { hash } = useLocation();
 
@@ -66,3 +65,11 @@ function App() {
 }
 
 export default App;
+
+
+
+/**
+ * @author Aditya Raj
+ * @github https://github.com/AdityaRaj81
+ * @project Classy Endeavors App
+ */
