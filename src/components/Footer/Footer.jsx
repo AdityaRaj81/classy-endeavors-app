@@ -1,3 +1,10 @@
+/**
+ * @author Aditya Raj
+ * @github https://github.com/AdityaRaj81
+ * @project Classy Endeavors App
+ */
+
+
 import { useNavigate, useLocation } from "react-router-dom";
 import styles from "./footer.module.css";
 import { FaWhatsapp, FaFacebookF, FaLinkedinIn, FaEnvelope, FaTv, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
@@ -20,13 +27,13 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContainer}>
-        {/* Left Side - Company Name */}
+
         <p className={styles.poweredBy}>Powered by Classy Endeavors</p>
         <br />
 
-        {/* Right Side - Social Icons & Links */}
+
         <div className={styles.rightSection}>
-          {/* Social Media Links (Top) */}
+
           <div className={styles.socialIcons}>
             <a href="https://wa.me/+918651065233" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp />
@@ -54,10 +61,8 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Horizontal Line */}
           <hr className={styles.divider} />
 
-          {/* Other Links (Bottom) */}
           <div className={styles.links}>
             <button onClick={() => handleNavClick("features")}>Features</button>
             <button onClick={() => handleNavClick("why-choose-us")}>Why Choose Us</button>
@@ -68,6 +73,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className={styles.Madeby}>
+      Crafted by <a href="https://github.com/AdityaRaj81" target="_blank">Aditya Raj</a>
+</p>
+
     </footer>
   );
 };

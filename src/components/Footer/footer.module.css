@@ -2,11 +2,10 @@
   background-color: #234472;
   padding: 40px;
   color: white;
-  border-top-left-radius: 50px;  /* Rounded top-left corner */
-  border-top-right-radius: 50px; /* Rounded top-right corner */
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
-/* Centering Content */
 .footerContainer {
   max-width: 1200px;
   margin: 0 auto;
@@ -15,13 +14,11 @@
   align-items: center;
 }
 
-/* Left Side - Company Name */
 .poweredBy {
   font-size: 20px;
   white-space: nowrap;
 }
 
-/* Right Side */
 .rightSection {
   display: flex;
   flex-direction: column;
@@ -29,7 +26,6 @@
   gap: 12px;
 }
 
-/* Social Media Icons */
 .socialIcons {
   display: flex;
   gap: 12px;
@@ -45,13 +41,11 @@
   color: #a4c3f5;
 }
 
-/* Horizontal Divider */
 .divider {
   width: 100%;
   border: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 
-/* Other Links */
 .links {
   display: flex;
   gap: 15px;
@@ -69,9 +63,33 @@
   text-decoration: underline;
 }
 
-/* Responsive Design */
+.Madeby {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff; 
+  background: rgba(104, 103, 103, 0.7);
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
 
-/* Tablets */
+.Madeby a {
+  color: #ff6600;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.Madeby a:hover {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   .footerContainer {
     flex-direction: column;
@@ -88,7 +106,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .footer {
     padding: 20px;
@@ -114,3 +131,12 @@
     gap: 8px;
   }
 }
+
+
+
+
+/* 
+// 🚀 Created by Aditya Raj
+// 📅 Project: Classy Endeavors App 
+// 🔗 Check out more: https://github.com/AdityaRaj81 
+*/
