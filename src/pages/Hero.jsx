@@ -11,7 +11,7 @@ const Hero = () => {
     const interval = setInterval(() => {
       index = (index + 1) % words.length;
       setCurrentWord(words[index]);
-    }, 2000); // Change word every 2 seconds
+    }, 2000); 
 
     return () => clearInterval(interval);
   }, []);
@@ -43,3 +43,14 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+
+
+
+
+/**
+ * @author Aditya Raj
+ * @github https://github.com/AdityaRaj81
+ * @project Classy Endeavors App
+ */

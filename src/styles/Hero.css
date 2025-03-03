@@ -1,10 +1,20 @@
+:root {
+  --primary-color: #183a66;
+  --primary-hover: #1d4b8f;
+  --highlight-color: #3468c0;
+  --text-color: #333;
+  --text-dark: #000;
+  --text-light: #444;
+  --background-gradient: linear-gradient(to right, #edf6ff, #ffffff, #e9f4ff);
+}
+
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 50px 20px;
-  background: linear-gradient(to right, #edf6ff, #ffffff, #e9f4ff);
+  background: var(--background-gradient);
 }
 
 .hero-content {
@@ -12,28 +22,28 @@
   width: 100%;
 }
 
-.hero-title{
+.hero-title {
   font-size: 3.1rem;
   margin-bottom: 20px;
   font-weight: bold;
-  color: #000;
+  color: var(--text-dark);
 }
 
-.hero-subtitle{
+.hero-subtitle {
   font-size: 1.2rem;
-  color: #333;
+  color: var(--text-color);
 }
+
 .highlight {
-  color: #3468c0;
+  color: var(--highlight-color);
   font-weight: 700;
   transition: opacity 0.5s ease-in-out;
 }
 
-
 .compliance {
   margin: 15px 0;
   font-size: 0.9rem;
-  color: #444;
+  color: var(--text-light);
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -59,7 +69,7 @@
 
 .upload-btn,
 .ai-btn {
-  background-color: #183a66;
+  background-color: var(--primary-color);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -71,7 +81,7 @@
 
 .upload-btn:hover,
 .ai-btn:hover {
-  background-color: #1d4b8f;
+  background-color: var(--primary-hover);
 }
 
 .file-box {
@@ -102,7 +112,6 @@
   }
 }
 
-/* Mobile Devices */
 @media (max-width: 480px) {
   h1 {
     font-size: 1.8rem;
@@ -140,3 +149,15 @@
     height: 120px;
   }
 }
+
+
+
+
+
+
+
+/* 
+// 🚀 Created by Aditya Raj
+// 📅 Project: Classy Endeavors App 
+// 🔗 Check out more: https://github.com/AdityaRaj81 
+*/
