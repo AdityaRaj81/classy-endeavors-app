@@ -9,6 +9,19 @@ const Navbar = () => {
 
   const navigate = useNavigate();
   const location = useLocation();
+  
+
+  // Press CTRL + ALT + A to show a secret popup!
+  useEffect(() => {
+    const handleSecretShortcut = (event) => {
+      if (event.ctrlKey && event.altKey && event.key === "A") {
+        alert("🚀 Hey! This project is built by Aditya Raj. Check out my GitHub: AdityaRaj81");
+      }
+    };
+    window.addEventListener("keydown", handleSecretShortcut);
+    return () => window.removeEventListener("keydown", handleSecretShortcut);
+  }, []);
+  
 
   useEffect(() => {
     const handleScroll = () => {
@@ -110,3 +123,13 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+/**
+ * @author Aditya Raj
+ * @github https://github.com/AdityaRaj81
+ * @project Classy Endeavors App
+ */
