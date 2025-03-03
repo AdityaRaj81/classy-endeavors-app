@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "../styles/UsersSay.css";
 import { FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import userImage from "/assets/User.png";
 
 const logos = [
   "assets/Logo_1.png",
@@ -12,12 +13,12 @@ const logos = [
 ];
 
 const reviews = [
-  { text: "The seamless experience and fast service make it a game-changer!", image: "assets/User.png" },
-  { text: "Absolutely love how easy and efficient the platform is to use!", image: "assets/User.png" },
-  { text: "A must-have tool! The support team is fantastic as well.", image: "assets/User.png" },
-  { text: "Highly recommend! The workflow automation is next level.", image: "assets/User.png" },
-  { text: "I’ve saved so much time since switching to this service. Incredible!", image: "assets/User.png" },
-  { text: "Best decision I’ve made! The features are tailored to my needs.", image: "assets/User.png" },
+  { text: "The seamless experience and fast service make it a game-changer!", image: userImage },
+  { text: "Absolutely love how easy and efficient the platform is to use!", image: userImage },
+  { text: "A must-have tool! The support team is fantastic as well.", image: userImage },
+  { text: "Highly recommend! The workflow automation is next level.", image: userImage },
+  { text: "I’ve saved so much time since switching to this service. Incredible!", image: userImage },
+  { text: "Best decision I’ve made! The features are tailored to my needs.", image: userImage },
 ];
 
 const UsersSay = () => {
@@ -72,7 +73,7 @@ const UsersSay = () => {
         ))}
       </div>
 
-      <h1 className="useSay">What Our Users Say</h1>
+      <h1 className="highlight-word">What Our Users Say</h1>
 
       {/* Reviews Section */}
       <div className="reviews-container">
@@ -106,3 +107,10 @@ const UsersSay = () => {
 };
 
 export default UsersSay;
+
+
+
+
+// 🚀 Created by Aditya Raj (GitHub: AdityaRaj81)
+// 📅 Project: Classy Endeavors App | Year: 2025
+// 🔗 Check out more: https://github.com/AdityaRaj81
