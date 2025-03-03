@@ -1,10 +1,23 @@
+/* Root Variables for Consistency */
+:root {
+  --primary-color: #1e3a8a;
+  --primary-hover: #14244e;
+  --background-gradient: linear-gradient(to right, #edf6ff, #ffffff, #e9f4ff);
+  --text-dark: #555;
+  --text-light: #777;
+  --border-color: #ddd;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --border-radius: 50px;
+  --transition: all 0.3s ease-in-out;
+}
+
 /* Plans Container */
 .plans-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  background: linear-gradient(to right, #edf6ff, #ffffff, #e9f4ff);
+  background: var(--background-gradient);
 }
 
 /* Title */
@@ -19,20 +32,17 @@
 .toggle-container {
   display: flex;
   background: #e0e0e0;
-  padding: 0.5rem;
+  padding: 1rem;
   border-radius: 50px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .toggle-button {
-  padding: 0.7rem 1.5rem;
+  padding: 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  border: none;
+  border-radius: 25%;
   cursor: pointer;
-  background: none;
-  transition: all 0.3s ease-in-out;
-
 }
 
 .toggle-button.active {
@@ -48,12 +58,16 @@
   gap: 1.5rem;
 }
 
+.pricing-cards :hover{
+  background-color: #4a7bf7;
+}
+
 /* Plan Card */
 .plan-card {
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
   padding: 1.5rem;
   text-align: center;
   width: 280px;
@@ -70,18 +84,14 @@
   margin-top: 0.5rem;
 }
 
-.plan-duration {
-  font-size: 0.9rem;
-  font-weight: normal;
-  color: #777;
-}
-
+.plan-duration,
 .plan-min-total {
   font-size: 0.9rem;
-  color: #777;
+  color: var(--text-light);
   margin-top: 0.3rem;
 }
 
+/* Features List */
 .plan-features {
   list-style: none;
   padding: 0;
@@ -90,13 +100,13 @@
 
 .feature-item {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-dark);
   margin-bottom: 0.5rem;
 }
 
 /* Select Plan Button */
 .select-plan-button {
-  background: #1e3a8a;
+  background: var(--primary-color);
   color: white;
   padding: 0.7rem 1.2rem;
   font-size: 1rem;
@@ -107,5 +117,33 @@
 }
 
 .select-plan-button:hover {
-  background: #14244e;
+  background: var(--primary-hover);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .plans-container {
+    padding: 1.5rem;
+  }
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .plan-card {
+    width: 90%;
+  }
+  .plans-title {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* 
+// 🚀 Created by Aditya Raj
+// 📅 Project: Classy Endeavors App 
+// 🔗 Check out more: https://github.com/AdityaRaj81 
+*/

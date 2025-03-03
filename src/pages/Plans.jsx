@@ -74,3 +74,12 @@ const Plans = () => {
 };
 
 export default Plans;
+
+
+
+
+/**
+ * @author Aditya Raj
+ * @github https://github.com/AdityaRaj81
+ * @project Classy Endeavors App
+ */
