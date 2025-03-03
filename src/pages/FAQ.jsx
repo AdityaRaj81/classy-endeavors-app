@@ -31,3 +31,12 @@ const FAQ = () => {
 };
 
 export default FAQ;
+
+
+
+
+/**
+ * @author Aditya Raj
+ * @github https://github.com/AdityaRaj81
+ * @project Classy Endeavors App
+ */
