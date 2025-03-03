@@ -17,9 +17,9 @@
 }
 
 .get-started-page {
-  background-color: var(--light-bg);
+  background: linear-gradient(to right, #edf6ff, #ffffff, #e9f4ff);
   padding: 60px 0;
-  min-height: calc(100vh - 140px); /* Adjust based on your header/footer height */
+  min-height: calc(180px - 180px); /* Adjust based on your header/footer height */
 }
 
 .get-started-container {
