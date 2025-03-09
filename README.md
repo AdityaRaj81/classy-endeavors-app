@@ -101,24 +101,22 @@ Click Below to explore Classy Endeavors. ⬇️
 ---
 
 
-### 🔗 Connect with Me
+### 🔗 Connect with Developer 
+### Crafted with Precision, Passion & a Touch of Class  
 - **GitHub**: [AdityRaj81](https://github.com/AdityRaj81)
 - **LinkedIn**: [AdityRaj81](https://linkedin.com/in/AdityRaj81)
-<!--
-- **Portfolio**: [your-portfolio](https://your-portfolio.com)
--->
-
-💡 *If you like this project, don’t forget to ⭐ the repository!*
 
 
 
 
-### Crafted with Precision, Passion & a Touch of Class  
+
+
 ✨ **Where Code Meets Elegance, and Pixels Find Perfection.** ✨  
 
 
 
 
+💡 *If you like this project, don’t forget to ⭐ the repository!*
 
 
 
