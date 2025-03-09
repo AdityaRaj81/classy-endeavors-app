@@ -3,13 +3,13 @@
 A modern, elegant, and responsive React-based UI project built with Tailwind CSS, designed to showcase a professional and scalable component-based architecture.
 
 ## 📌 Project Overview
-Classy Endeavors App is a sophisticated UI implementation based on a Figma design. This project follows a modular and reusable component structure to maintain scalability and efficiency. It includes:
+The Classy Endeavors App features a sophisticated UI implementation derived from a Figma design. This project adheres to a modular and reusable component structure to ensure scalability and efficiency. It includes:
 
-- **Atomic Design Principles**: Components structured from basic elements to complex layouts.
-- **Responsive UI**: Fully optimized for different screen sizes.
-- **Tailwind CSS Integration**: Efficient styling with a utility-first approach.
-- **State Management**: Context API or Zustand for managing application-wide states.
-- **Scalability**: Organized folder structure for seamless component management.
+- **Atomic Design Principles**: Components arranged from fundamental elements to intricate layouts.
+- **Responsive UI**: Fully optimized for various screen sizes.
+- **Tailwind CSS Integration**: Effective styling with a utility-first approach.
+- **State Management**: Utilize Context API or Zustand for application-wide state management.
+- **Scalability**: Structured folder organization for efficient component management.
 
 ## 🛠️ Tech Stack
 - **React**: Component-based architecture for seamless UI development.
@@ -83,7 +83,7 @@ Classy Endeavors App serves as a refined approach to front-end development, comb
 ---
 
 ### 🎯 Future Enhancements
-- [ ] Implement Dark Mode 🌙
+
 - [ ] Add Redux for advanced state management 🗂️
 - [ ] Improve animations and micro-interactions ✨
 - [ ] Deploy on Vercel / Netlify 🚀
