@@ -18,6 +18,7 @@ Classy Endeavors App is a sophisticated UI implementation based on a Figma desig
 - **React Router**: For navigation and routing.
 - **State Management**: Context API / Zustand for managing application states.
 
+<!-- 
 ## 📂 Folder Structure
 ```plaintext
 src/
@@ -49,6 +50,7 @@ src/
 ├── styles/              # Global styles
 └── README.md            # Project documentation
 ```
+-->
 
 ## 🚀 Getting Started
 ### **1️⃣ Clone the Repository**
